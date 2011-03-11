@@ -1,0 +1,1165 @@
+DEBUG:root:Executing: ssh markus@cli.globusonline.org endpoint-list
+DEBUG:root:Result (stdout):
+-------------------
+ci#pads             11:41:44
+go#ep1              -       
+go#ep2              -       
+graham#arcs-df      -       
+auckland            -       
+df                  -       
+df_auckland         -       
+ng2_auckland        -       
+ng5                 -       
+stuartcharters#nzdf -       
+
+
+DEBUG:root:Result (stderr):
+-------------------
+
+
+DEBUG:root:Executing: ssh markus@cli.globusonline.org ls ci#pads/~/
+DEBUG:root:Result (stdout):
+-------------------
+po_517541_rgb_0000000.tif
+test-qstat
+test.file
+test.tif
+testfile
+testfile.txt
+testfile_30GB
+
+
+DEBUG:root:Result (stderr):
+-------------------
+
+
+DEBUG:root:Executing: ssh markus@cli.globusonline.org endpoint-list
+DEBUG:root:Result (stdout):
+-------------------
+ci#pads             11:41:07
+go#ep1              -       
+go#ep2              -       
+graham#arcs-df      -       
+auckland            -       
+df                  -       
+df_auckland         -       
+ng2_auckland        -       
+ng5                 -       
+stuartcharters#nzdf -       
+
+
+DEBUG:root:Result (stderr):
+-------------------
+
+
+DEBUG:root:Executing: ssh markus@cli.globusonline.org ls ci#pads/~/
+DEBUG:root:Result (stdout):
+-------------------
+po_517541_rgb_0000000.tif
+test-qstat
+test.file
+test.tif
+testfile
+testfile.txt
+testfile_30GB
+
+
+DEBUG:root:Result (stderr):
+-------------------
+
+
+DEBUG:root:Executing: ssh markus@cli.globusonline.org endpoint-list
+DEBUG:root:Result (stdout):
+-------------------
+ci#pads             11:40:10
+go#ep1              -       
+go#ep2              -       
+graham#arcs-df      -       
+auckland            -       
+df                  -       
+df_auckland         -       
+ng2_auckland        -       
+ng5                 -       
+stuartcharters#nzdf -       
+
+
+DEBUG:root:Result (stderr):
+-------------------
+
+
+DEBUG:root:Executing: ssh markus@cli.globusonline.org endpoint-list
+DEBUG:root:Result (stdout):
+-------------------
+ci#pads             11:39:40
+go#ep1              -       
+go#ep2              -       
+graham#arcs-df      -       
+auckland            -       
+df                  -       
+df_auckland         -       
+ng2_auckland        -       
+ng5                 -       
+stuartcharters#nzdf -       
+
+
+DEBUG:root:Result (stderr):
+-------------------
+
+
+DEBUG:root:Executing: ssh markus@cli.globusonline.org endpoint-list
+DEBUG:root:Result (stdout):
+-------------------
+ci#pads             11:38:35
+go#ep1              -       
+go#ep2              -       
+graham#arcs-df      -       
+auckland            -       
+df                  -       
+df_auckland         -       
+ng2_auckland        -       
+ng5                 -       
+stuartcharters#nzdf -       
+
+
+DEBUG:root:Result (stderr):
+-------------------
+
+
+DEBUG:root:Executing: ssh markus@cli.globusonline.org ls ci#pads/~/
+DEBUG:root:Result (stdout):
+-------------------
+po_517541_rgb_0000000.tif
+test-qstat
+test.file
+test.tif
+testfile
+testfile.txt
+testfile_30GB
+
+
+DEBUG:root:Result (stderr):
+-------------------
+
+
+DEBUG:root:Executing: ssh markus@cli.globusonline.org endpoint-list
+DEBUG:root:Result (stdout):
+-------------------
+ci#pads             11:37:01
+go#ep1              -       
+go#ep2              -       
+graham#arcs-df      -       
+auckland            -       
+df                  -       
+df_auckland         -       
+ng2_auckland        -       
+ng5                 -       
+stuartcharters#nzdf -       
+
+
+DEBUG:root:Result (stderr):
+-------------------
+
+
+DEBUG:root:Executing: ssh markus@cli.globusonline.org ls ci#pads/~/
+DEBUG:root:Result (stdout):
+-------------------
+po_517541_rgb_0000000.tif
+test-qstat
+test.file
+test.tif
+testfile
+testfile.txt
+testfile_30GB
+
+
+DEBUG:root:Result (stderr):
+-------------------
+
+
+DEBUG:root:Executing: ssh markus@cli.globusonline.org endpoint-list
+DEBUG:root:Result (stdout):
+-------------------
+ci#pads             11:33:57
+go#ep1              -       
+go#ep2              -       
+graham#arcs-df      -       
+auckland            -       
+df                  -       
+df_auckland         -       
+ng2_auckland        -       
+ng5                 -       
+stuartcharters#nzdf -       
+
+
+DEBUG:root:Result (stderr):
+-------------------
+
+
+DEBUG:root:Executing: ssh markus@cli.globusonline.org endpoint-list
+DEBUG:root:Result (stdout):
+-------------------
+ci#pads             11:33:12
+go#ep1              -       
+go#ep2              -       
+graham#arcs-df      -       
+auckland            -       
+df                  -       
+df_auckland         -       
+ng2_auckland        -       
+ng5                 -       
+stuartcharters#nzdf -       
+
+
+DEBUG:root:Result (stderr):
+-------------------
+
+
+DEBUG:root:Executing: ssh markus@cli.globusonline.org endpoint-list
+DEBUG:root:Result (stdout):
+-------------------
+ci#pads             11:31:21
+go#ep1              -       
+go#ep2              -       
+graham#arcs-df      -       
+auckland            -       
+df                  -       
+df_auckland         -       
+ng2_auckland        -       
+ng5                 -       
+stuartcharters#nzdf -       
+
+
+DEBUG:root:Result (stderr):
+-------------------
+
+
+DEBUG:root:Executing: ssh markus@cli.globusonline.org endpoint-list
+DEBUG:root:Result (stdout):
+-------------------
+ci#pads             11:30:58
+go#ep1              -       
+go#ep2              -       
+graham#arcs-df      -       
+auckland            -       
+df                  -       
+df_auckland         -       
+ng2_auckland        -       
+ng5                 -       
+stuartcharters#nzdf -       
+
+
+DEBUG:root:Result (stderr):
+-------------------
+
+
+DEBUG:root:Executing: ssh markus@cli.globusonline.org endpoint-list
+DEBUG:root:Result (stdout):
+-------------------
+ci#pads             11:30:15
+go#ep1              -       
+go#ep2              -       
+graham#arcs-df      -       
+auckland            -       
+df                  -       
+df_auckland         -       
+ng2_auckland        -       
+ng5                 -       
+stuartcharters#nzdf -       
+
+
+DEBUG:root:Result (stderr):
+-------------------
+
+
+DEBUG:root:Executing: ssh markus@cli.globusonline.org endpoint-list
+DEBUG:root:Result (stdout):
+-------------------
+ci#pads             11:30:02
+go#ep1              -       
+go#ep2              -       
+graham#arcs-df      -       
+auckland            -       
+df                  -       
+df_auckland         -       
+ng2_auckland        -       
+ng5                 -       
+stuartcharters#nzdf -       
+
+
+DEBUG:root:Result (stderr):
+-------------------
+
+
+DEBUG:root:Executing: ssh markus@cli.globusonline.org endpoint-list
+DEBUG:root:Result (stdout):
+-------------------
+ci#pads             11:29:40
+go#ep1              -       
+go#ep2              -       
+graham#arcs-df      -       
+auckland            -       
+df                  -       
+df_auckland         -       
+ng2_auckland        -       
+ng5                 -       
+stuartcharters#nzdf -       
+
+
+DEBUG:root:Result (stderr):
+-------------------
+
+
+DEBUG:root:Executing: ssh markus@cli.globusonline.org ls ci#pads/~/
+DEBUG:root:Result (stdout):
+-------------------
+po_517541_rgb_0000000.tif
+test-qstat
+test.file
+test.tif
+testfile
+testfile.txt
+testfile_30GB
+
+
+DEBUG:root:Result (stderr):
+-------------------
+
+
+DEBUG:root:Executing: ssh markus@cli.globusonline.org endpoint-list
+DEBUG:root:Result (stdout):
+-------------------
+ci#pads             11:25:48
+go#ep1              -       
+go#ep2              -       
+graham#arcs-df      -       
+auckland            -       
+df                  -       
+df_auckland         -       
+ng2_auckland        -       
+ng5                 -       
+stuartcharters#nzdf -       
+
+
+DEBUG:root:Result (stderr):
+-------------------
+
+
+DEBUG:root:Executing: ssh markus@cli.globusonline.org endpoint-list
+DEBUG:root:Result (stdout):
+-------------------
+ci#pads             11:23:49
+go#ep1              -       
+go#ep2              -       
+graham#arcs-df      -       
+auckland            -       
+df                  -       
+df_auckland         -       
+ng2_auckland        -       
+ng5                 -       
+stuartcharters#nzdf -       
+
+
+DEBUG:root:Result (stderr):
+-------------------
+
+
+DEBUG:root:Executing: ssh markus@cli.globusonline.org endpoint-list
+DEBUG:root:Result (stdout):
+-------------------
+ci#pads             11:23:27
+go#ep1              -       
+go#ep2              -       
+graham#arcs-df      -       
+auckland            -       
+df                  -       
+df_auckland         -       
+ng2_auckland        -       
+ng5                 -       
+stuartcharters#nzdf -       
+
+
+DEBUG:root:Result (stderr):
+-------------------
+
+
+DEBUG:root:Executing: ssh markus@cli.globusonline.org endpoint-list
+DEBUG:root:Result (stdout):
+-------------------
+ci#pads             11:21:56
+go#ep1              -       
+go#ep2              -       
+graham#arcs-df      -       
+auckland            -       
+df                  -       
+df_auckland         -       
+ng2_auckland        -       
+ng5                 -       
+stuartcharters#nzdf -       
+
+
+DEBUG:root:Result (stderr):
+-------------------
+
+
+DEBUG:root:Executing: ssh markus@cli.globusonline.org endpoint-list
+DEBUG:root:Result (stdout):
+-------------------
+ci#pads             11:20:50
+go#ep1              -       
+go#ep2              -       
+graham#arcs-df      -       
+auckland            -       
+df                  -       
+df_auckland         -       
+ng2_auckland        -       
+ng5                 -       
+stuartcharters#nzdf -       
+
+
+DEBUG:root:Result (stderr):
+-------------------
+
+
+DEBUG:root:Populating endpoint cache
+DEBUG:root:Executing: ssh markus@cli.globusonline.org endpoint-list
+DEBUG:root:Result (stdout):
+-------------------
+ci#pads             11:18:26
+go#ep1              -       
+go#ep2              -       
+graham#arcs-df      -       
+auckland            -       
+df                  -       
+df_auckland         -       
+ng2_auckland        -       
+ng5                 -       
+stuartcharters#nzdf -       
+
+
+DEBUG:root:Result (stderr):
+-------------------
+
+
+DEBUG:root:Populating endpoint cache
+DEBUG:root:Executing: ssh markus@cli.globusonline.org endpoint-list
+DEBUG:root:Result (stdout):
+-------------------
+ci#pads             11:18:00
+go#ep1              -       
+go#ep2              -       
+graham#arcs-df      -       
+auckland            -       
+df                  -       
+df_auckland         -       
+ng2_auckland        -       
+ng5                 -       
+stuartcharters#nzdf -       
+
+
+DEBUG:root:Result (stderr):
+-------------------
+
+
+DEBUG:root:Executing: ssh markus@cli.globusonline.org ls ci#pads/~/
+DEBUG:root:Result (stdout):
+-------------------
+po_517541_rgb_0000000.tif
+test-qstat
+test.file
+test.tif
+testfile
+testfile.txt
+testfile_30GB
+
+
+DEBUG:root:Result (stderr):
+-------------------
+
+
+DEBUG:root:Populating endpoint cache
+DEBUG:root:Executing: ssh markus@cli.globusonline.org endpoint-list
+DEBUG:root:Result (stdout):
+-------------------
+ci#pads             11:15:08
+go#ep1              -       
+go#ep2              -       
+graham#arcs-df      -       
+auckland            -       
+df                  -       
+df_auckland         -       
+ng2_auckland        -       
+ng5                 -       
+stuartcharters#nzdf -       
+
+
+DEBUG:root:Result (stderr):
+-------------------
+
+
+DEBUG:root:Populating endpoint cache
+DEBUG:root:Executing: ssh markus@cli.globusonline.org endpoint-list
+DEBUG:root:Result (stdout):
+-------------------
+ci#pads             11:14:17
+go#ep1              -       
+go#ep2              -       
+graham#arcs-df      -       
+auckland            -       
+df                  -       
+df_auckland         -       
+ng2_auckland        -       
+ng5                 -       
+stuartcharters#nzdf -       
+
+
+DEBUG:root:Result (stderr):
+-------------------
+
+
+DEBUG:root:Populating endpoint cache
+DEBUG:root:Executing: ssh markus@cli.globusonline.org endpoint-list
+DEBUG:root:Populating endpoint cache
+DEBUG:root:Executing: ssh markus@cli.globusonline.org endpoint-list
+DEBUG:root:Result (stdout):
+-------------------
+ci#pads             11:13:49
+go#ep1              -       
+go#ep2              -       
+graham#arcs-df      -       
+auckland            -       
+df                  -       
+df_auckland         -       
+ng2_auckland        -       
+ng5                 -       
+stuartcharters#nzdf -       
+
+
+DEBUG:root:Result (stderr):
+-------------------
+
+
+DEBUG:root:Executing: ssh markus@cli.globusonline.org ls ci#pads/~/
+DEBUG:root:Result (stdout):
+-------------------
+po_517541_rgb_0000000.tif
+test-qstat
+test.file
+test.tif
+testfile
+testfile.txt
+testfile_30GB
+
+
+DEBUG:root:Result (stderr):
+-------------------
+
+
+DEBUG:root:Populating endpoint cache
+DEBUG:root:Executing: ssh markus@cli.globusonline.org endpoint-list
+DEBUG:root:Result (stdout):
+-------------------
+ci#pads             11:13:17
+go#ep1              -       
+go#ep2              -       
+graham#arcs-df      -       
+auckland            -       
+df                  -       
+df_auckland         -       
+ng2_auckland        -       
+ng5                 -       
+stuartcharters#nzdf -       
+
+
+DEBUG:root:Result (stderr):
+-------------------
+
+
+DEBUG:root:Executing: ssh markus@cli.globusonline.org ls ci#pads/~/
+DEBUG:root:Result (stdout):
+-------------------
+po_517541_rgb_0000000.tif
+test-qstat
+test.file
+test.tif
+testfile
+testfile.txt
+testfile_30GB
+
+
+DEBUG:root:Result (stderr):
+-------------------
+
+
+DEBUG:root:Populating endpoint cache
+DEBUG:root:Executing: ssh markus@cli.globusonline.org endpoint-list
+DEBUG:root:Result (stdout):
+-------------------
+ci#pads             11:09:25
+go#ep1              -       
+go#ep2              -       
+graham#arcs-df      -       
+auckland            -       
+df                  -       
+df_auckland         -       
+ng2_auckland        -       
+ng5                 -       
+stuartcharters#nzdf -       
+
+
+DEBUG:root:Result (stderr):
+-------------------
+
+
+DEBUG:root:Executing: ssh markus@cli.globusonline.org ls ci#pads/~/
+DEBUG:root:Result (stdout):
+-------------------
+po_517541_rgb_0000000.tif
+test-qstat
+test.file
+test.tif
+testfile
+testfile.txt
+testfile_30GB
+
+
+DEBUG:root:Result (stderr):
+-------------------
+
+
+DEBUG:root:Populating endpoint cache
+DEBUG:root:Executing: ssh markus@cli.globusonline.org endpoint-list
+DEBUG:root:Result (stdout):
+-------------------
+ci#pads             10:45:00
+go#ep1              -       
+go#ep2              -       
+graham#arcs-df      -       
+auckland            -       
+df                  -       
+df_auckland         -       
+ng2_auckland        -       
+ng5                 -       
+stuartcharters#nzdf -       
+
+
+DEBUG:root:Result (stderr):
+-------------------
+
+
+DEBUG:root:Executing: ssh markus@cli.globusonline.org ls  ci#pads/~/
+DEBUG:root:Result (stdout):
+-------------------
+po_517541_rgb_0000000.tif
+test-qstat
+test.file
+test.tif
+testfile
+testfile.txt
+testfile_30GB
+
+
+DEBUG:root:Result (stderr):
+-------------------
+
+
+DEBUG:root:Populating endpoint cache
+DEBUG:root:Executing: ssh markus@cli.globusonline.org endpoint-list
+DEBUG:root:Executing: ssh markus@cli.globusonline.org transfer
+DEBUG:root:Executing: ssh markus@cli.globusonline.org transfer
+DEBUG:root:Result (stdout):
+-------------------
+Task ID: c6167a7c-4b81-11e0-81ce-123139054450
+
+
+DEBUG:root:Result (stderr):
+-------------------
+Error: Missing '/': 'fff'
+
+
+DEBUG:root:Executing: ssh markus@cli.globusonline.org transfer
+DEBUG:root:Result (stdout):
+-------------------
+Task ID: eb189080-4b81-11e0-a5e0-123139054450
+
+
+DEBUG:root:Result (stderr):
+-------------------
+Error: Missing '/': 'fff'
+
+
+DEBUG:root:Executing: ssh markus@cli.globusonline.org transfer
+DEBUG:root:Result (stdout):
+-------------------
+Task ID: f8dd4774-4b81-11e0-847b-123139054450
+
+
+DEBUG:root:Result (stderr):
+-------------------
+Error: Missing '/': 'fff'
+
+
+DEBUG:root:Executing: ssh markus@cli.globusonline.org transfer
+DEBUG:root:Result (stdout):
+-------------------
+Task ID: 33dd8bcc-4b82-11e0-8d0d-123139054450
+
+
+DEBUG:root:Result (stderr):
+-------------------
+Error: Missing '/': 'ci#pads'
+
+
+DEBUG:root:Executing: ssh markus@cli.globusonline.org transfer
+DEBUG:root:Result (stdout):
+-------------------
+Task ID: 543cd9c2-4b82-11e0-9ba3-123139054450
+
+
+DEBUG:root:Result (stderr):
+-------------------
+Error: Poorly formed input line 1: '-r option should be used when transfering directories: ci#pads/~/testfile_30GB auckland/~/ '
+
+
+DEBUG:root:Executing: ssh markus@cli.globusonline.org transfer
+DEBUG:root:Result (stdout):
+-------------------
+Task ID: 63ce580c-4b82-11e0-8a4d-123139054450
+
+
+DEBUG:root:Result (stderr):
+-------------------
+Error: Credentials have expired.
+
+
+DEBUG:root:Populating endpoint cache
+DEBUG:root:Executing: ssh markus@cli.globusonline.org endpoint-list
+DEBUG:root:Result (stdout):
+-------------------
+ci#pads             10:34:20
+go#ep1              -       
+go#ep2              -       
+graham#arcs-df      -       
+auckland            -       
+df                  -       
+df_auckland         -       
+ng2_auckland        -       
+ng5                 -       
+stuartcharters#nzdf -       
+
+
+DEBUG:root:Result (stderr):
+-------------------
+
+
+DEBUG:root:Populating endpoint cache
+DEBUG:root:Executing: ssh markus@cli.globusonline.org endpoint-list
+DEBUG:root:Result (stdout):
+-------------------
+ci#pads             10:33:43
+go#ep1              -       
+go#ep2              -       
+graham#arcs-df      -       
+auckland            -       
+df                  -       
+df_auckland         -       
+ng2_auckland        -       
+ng5                 11:59:51
+stuartcharters#nzdf -       
+
+
+DEBUG:root:Result (stderr):
+-------------------
+
+
+DEBUG:root:Populating endpoint cache
+DEBUG:root:Executing: ssh markus@cli.globusonline.org endpoint-list
+DEBUG:root:Result (stdout):
+-------------------
+ci#pads             10:33:09
+go#ep1              -       
+go#ep2              -       
+graham#arcs-df      -       
+auckland            -       
+df                  -       
+df_auckland         -       
+ng2_auckland        -       
+ng5                 11:59:16
+stuartcharters#nzdf -       
+
+
+DEBUG:root:Result (stderr):
+-------------------
+
+
+DEBUG:root:Populating endpoint cache
+DEBUG:root:Executing: ssh markus@cli.globusonline.org endpoint-list
+DEBUG:root:Result (stdout):
+-------------------
+ci#pads             10:32:37
+go#ep1              -       
+go#ep2              -       
+graham#arcs-df      -       
+auckland            -       
+df                  -       
+df_auckland         -       
+ng2_auckland        -       
+ng5                 11:58:44
+stuartcharters#nzdf -       
+
+
+DEBUG:root:Result (stderr):
+-------------------
+
+
+DEBUG:root:Executing: ssh markus@cli.globusonline.org transfer
+DEBUG:root:Result (stdout):
+-------------------
+Task ID: 2117d5a0-4b83-11e0-bca5-123139054450
+Created transfer task with 1 file(s)
+
+
+DEBUG:root:Result (stderr):
+-------------------
+
+
+DEBUG:root:Populating endpoint cache
+DEBUG:root:Executing: ssh markus@cli.globusonline.org endpoint-list
+DEBUG:root:Result (stdout):
+-------------------
+ci#pads             10:28:38
+go#ep1              -       
+go#ep2              -       
+graham#arcs-df      -       
+auckland            -       
+df                  -       
+df_auckland         -       
+ng2_auckland        -       
+ng5                 11:54:46
+stuartcharters#nzdf -       
+
+
+DEBUG:root:Result (stderr):
+-------------------
+
+
+DEBUG:root:Populating endpoint cache
+DEBUG:root:Executing: ssh markus@cli.globusonline.org endpoint-list
+DEBUG:root:Result (stdout):
+-------------------
+ci#pads             10:28:19
+go#ep1              -       
+go#ep2              -       
+graham#arcs-df      -       
+auckland            -       
+df                  -       
+df_auckland         -       
+ng2_auckland        -       
+ng5                 11:54:26
+stuartcharters#nzdf -       
+
+
+DEBUG:root:Result (stderr):
+-------------------
+
+
+DEBUG:root:Executing: ssh markus@cli.globusonline.org transfer
+DEBUG:root:Result (stdout):
+-------------------
+Task ID: baee6c20-4b83-11e0-8599-123139054450
+Created transfer task with 1 file(s)
+
+
+DEBUG:root:Result (stderr):
+-------------------
+
+
+DEBUG:root:Populating endpoint cache
+DEBUG:root:Executing: ssh markus@cli.globusonline.org endpoint-list
+DEBUG:root:Result (stdout):
+-------------------
+ci#pads             10:28:01
+go#ep1              -       
+go#ep2              -       
+graham#arcs-df      -       
+auckland            -       
+df                  -       
+df_auckland         -       
+ng2_auckland        -       
+ng5                 11:54:09
+stuartcharters#nzdf -       
+
+
+DEBUG:root:Result (stderr):
+-------------------
+
+
+DEBUG:root:Executing: ssh markus@cli.globusonline.org transfer
+DEBUG:root:Result (stdout):
+-------------------
+Task ID: c574e78c-4b83-11e0-8f76-123139054450
+Created transfer task with 1 file(s)
+
+
+DEBUG:root:Result (stderr):
+-------------------
+
+
+DEBUG:root:Populating endpoint cache
+DEBUG:root:Executing: ssh markus@cli.globusonline.org endpoint-list
+DEBUG:root:Result (stdout):
+-------------------
+ci#pads             10:27:38
+go#ep1              -       
+go#ep2              -       
+graham#arcs-df      -       
+auckland            -       
+df                  -       
+df_auckland         -       
+ng2_auckland        -       
+ng5                 11:53:45
+stuartcharters#nzdf -       
+
+
+DEBUG:root:Result (stderr):
+-------------------
+
+
+DEBUG:root:Executing: ssh markus@cli.globusonline.org transfer
+DEBUG:root:Result (stdout):
+-------------------
+Task ID: d3a1541c-4b83-11e0-8e61-123139054450
+Created transfer task with 1 file(s)
+
+
+DEBUG:root:Result (stderr):
+-------------------
+
+
+DEBUG:root:Populating endpoint cache
+DEBUG:root:Executing: ssh markus@cli.globusonline.org endpoint-list
+DEBUG:root:Result (stdout):
+-------------------
+ci#pads             10:27:23
+go#ep1              -       
+go#ep2              -       
+graham#arcs-df      -       
+auckland            -       
+df                  -       
+df_auckland         -       
+ng2_auckland        -       
+ng5                 11:53:31
+stuartcharters#nzdf -       
+
+
+DEBUG:root:Result (stderr):
+-------------------
+
+
+DEBUG:root:Executing: ssh markus@cli.globusonline.org transfer
+DEBUG:root:Result (stdout):
+-------------------
+Task ID: dc16f9e4-4b83-11e0-b112-123139054450
+Created transfer task with 1 file(s)
+
+
+DEBUG:root:Result (stderr):
+-------------------
+
+
+DEBUG:root:Executing: ssh markus@cli.globusonline.org transfer
+DEBUG:root:Result (stdout):
+-------------------
+Task ID: ddf2c414-4b83-11e0-a39f-123139054450
+Created transfer task with 2 file(s)
+
+
+DEBUG:root:Result (stderr):
+-------------------
+
+
+DEBUG:root:Populating endpoint cache
+DEBUG:root:Executing: ssh markus@cli.globusonline.org endpoint-list
+DEBUG:root:Result (stdout):
+-------------------
+ci#pads             10:26:23
+go#ep1              -       
+go#ep2              -       
+graham#arcs-df      -       
+auckland            -       
+df                  -       
+df_auckland         -       
+ng2_auckland        -       
+ng5                 11:52:30
+stuartcharters#nzdf -       
+
+
+DEBUG:root:Result (stderr):
+-------------------
+
+
+DEBUG:root:Executing: ssh markus@cli.globusonline.org transfer
+DEBUG:root:Result (stdout):
+-------------------
+Task ID: 0046c3bc-4b84-11e0-af09-123139054450
+Created transfer task with 2 file(s)
+
+
+DEBUG:root:Result (stderr):
+-------------------
+
+
+DEBUG:root:Populating endpoint cache
+DEBUG:root:Executing: ssh markus@cli.globusonline.org endpoint-list
+DEBUG:root:Result (stdout):
+-------------------
+ci#pads             10:24:29
+go#ep1              -       
+go#ep2              -       
+graham#arcs-df      -       
+auckland            -       
+df                  -       
+df_auckland         -       
+ng2_auckland        -       
+ng5                 11:50:36
+stuartcharters#nzdf -       
+
+
+DEBUG:root:Result (stderr):
+-------------------
+
+
+DEBUG:root:Executing: ssh markus@cli.globusonline.org transfer
+DEBUG:root:Result (stdout):
+-------------------
+Task ID: 4421df86-4b84-11e0-8eca-123139054450
+Created transfer task with 2 file(s)
+
+
+DEBUG:root:Result (stderr):
+-------------------
+
+
+DEBUG:root:Populating endpoint cache
+DEBUG:root:Executing: ssh markus@cli.globusonline.org endpoint-list
+DEBUG:root:Result (stdout):
+-------------------
+ci#pads             10:23:57
+go#ep1              -       
+go#ep2              -       
+graham#arcs-df      -       
+auckland            -       
+df                  -       
+df_auckland         -       
+ng2_auckland        -       
+ng5                 11:50:04
+stuartcharters#nzdf -       
+
+
+DEBUG:root:Result (stderr):
+-------------------
+
+
+DEBUG:root:Executing: ssh markus@cli.globusonline.org transfer
+DEBUG:root:Result (stdout):
+-------------------
+Task ID: 575312d2-4b84-11e0-82c9-123139054450
+Created transfer task with 1 file(s)
+
+
+DEBUG:root:Result (stderr):
+-------------------
+
+
+DEBUG:root:Populating endpoint cache
+DEBUG:root:Executing: ssh markus@cli.globusonline.org endpoint-list
+DEBUG:root:Result (stdout):
+-------------------
+ci#pads             10:22:17
+go#ep1              -       
+go#ep2              -       
+graham#arcs-df      -       
+auckland            -       
+df                  -       
+df_auckland         -       
+ng2_auckland        -       
+ng5                 11:48:24
+stuartcharters#nzdf -       
+
+
+DEBUG:root:Result (stderr):
+-------------------
+
+
+DEBUG:root:Executing: ssh markus@cli.globusonline.org transfer --perf-p=6 --perf-cc=6
+DEBUG:root:Result (stdout):
+-------------------
+Task ID: 93037786-4b84-11e0-aaca-123139054450
+Created transfer task with 1 file(s)
+
+
+DEBUG:root:Result (stderr):
+-------------------
+
+
+DEBUG:root:Populating endpoint cache
+DEBUG:root:Executing: ssh markus@cli.globusonline.org endpoint-list
+DEBUG:root:Result (stdout):
+-------------------
+ci#pads             10:17:18
+go#ep1              -       
+go#ep2              -       
+graham#arcs-df      -       
+auckland            -       
+df                  -       
+df_auckland         -       
+ng2_auckland        -       
+ng5                 11:43:25
+stuartcharters#nzdf -       
+
+
+DEBUG:root:Result (stderr):
+-------------------
+
+
+DEBUG:root:Executing: ssh markus@cli.globusonline.org transfer --perf-p=6 --perf-cc=6
+DEBUG:root:Result (stdout):
+-------------------
+Task ID: 45252310-4b85-11e0-9b81-123139054450
+Created transfer task with 2 file(s)
+
+
+DEBUG:root:Result (stderr):
+-------------------
+
+
+DEBUG:root:Populating endpoint cache
+DEBUG:root:Executing: ssh markus@cli.globusonline.org endpoint-list
+DEBUG:root:Result (stdout):
+-------------------
+ci#pads             10:16:54
+go#ep1              -       
+go#ep2              -       
+graham#arcs-df      -       
+auckland            -       
+df                  -       
+df_auckland         -       
+ng2_auckland        -       
+ng5                 11:43:02
+stuartcharters#nzdf -       
+
+
+DEBUG:root:Result (stderr):
+-------------------
+
+
+DEBUG:root:Executing: ssh markus@cli.globusonline.org transfer --perf-p=6 --perf-cc=6
+DEBUG:root:Result (stdout):
+-------------------
+Task ID: 5301a382-4b85-11e0-b095-123139054450
+Created transfer task with 2 file(s)
+
+
+DEBUG:root:Result (stderr):
+-------------------
+
+
