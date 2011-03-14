@@ -68,11 +68,25 @@ class Transfer:
         self.target_path = target_path
         self.options = options
 
+    def __eq__(self, o):
+        return self.source_ep == o.source_ep and self.source_path == o.source_path and self.target_ep == o.target_ep and self.target_path == o.target_path
+        
+    def __cmp__(self, o):
+        return self.source_ep == o.source_ep and self.source_path == o.source_path and self.target_ep == o.target_ep and self.target_path == o.target_path
+      
+    def __hash__(self):
+        return hash((self.source_ep, self.source_path, self.target_ep, self.target_path))
+
+    def __str__(self):
+        return 'Transfer of file '+self.source_path+' from: '+self.source_ep+' to: '+self.target_ep
+
 
 LOG_FILENAME = 'go.debug'
 logging.basicConfig(filename=LOG_FILENAME,level=logging.DEBUG)
 
 class Task:
+    
+    events = []
     
     def __init__(self, details):
         
@@ -85,21 +99,30 @@ class Task:
         self.requestTime = toDate(details.get('Request Time'))
         self.deadline = toDate(details.get('Deadline'))
         self.completionTime = toDate(details.get('Completion Time'))
-        self.totalTasks = details.get('Total Tasks')
-        self.tasksSuccessful = details.get('Tasks Successful')
-        self.tasksExpired = details.get('Tasks Expired')
-        self.tasksCancelled = details.get('Tasks Canceled')
-        self.taksFailed = details.get('Tasks Failed')
-        self.tasksPending = details.get('Tasks Pending')
-        self.tasksRetrying = details.get('Tasks Retrying')
+        self.totalTasks = int(details.get('Total Tasks'))
+        self.tasksSuccessful = int(details.get('Tasks Successful'))
+        self.tasksExpired = int(details.get('Tasks Expired'))
+        self.tasksCancelled = int(details.get('Tasks Canceled'))
+        self.taksFailed = int(details.get('Tasks Failed'))
+        self.tasksPending = int(details.get('Tasks Pending'))
+        self.tasksRetrying = int(details.get('Tasks Retrying'))
         self.command = details.get('Command')
-        self.files = details.get('Files')
-        self.filesSkipped = details.get('Files Skipped')
-        self.directories = details.get('Directories')
-        self.bytesTransferred = details.get('Bytes Transferred')
-        self.bytesChecksummed = details.get('Bytes Checksummed')
-        self.mbps = details.get('MBits/sec')
+        self.files = int(details.get('Files'))
+        self.filesSkipped = int(details.get('Files Skipped'))
+        self.directories = int(details.get('Directories'))
+        self.bytesTransferred = long(details.get('Bytes Transferred'))
+        self.bytesChecksummed = long(details.get('Bytes Checksummed'))
+        self.mbps = float(details.get('MBits/sec'))
         
+        
+    def print_details(self):
+        
+        print self.taskId
+        print '--------------------------------------------'
+        print '\perf. options: '+self.command
+        print '\tbytes transferred: '+str(self.bytesTransferred)
+        print '\tmbps: '+str(self.mbps)
+        print '--------------------------------------------\n'
         
     def isfinished(self):
         
@@ -110,10 +133,28 @@ class Task:
         else:
             return False
 
+class Event:
+    
+    def __init__(self, csvline):
+        
+        tokens = csvline.split(',')
+        self.id = tokens[0]
+        self.parentId = tokens[1]
+        self.time = tokens[2]
+        self.code = tokens[3]
+        self.description = tokens[4]
+        self.details = tokens[5]
+        
+    def to_string(self):
+        
+        return 'Task ID\t:'+self.id+'\nParent Task ID\t: '+self.parentId+'\nTime\t: '+self.time+'\nCode\t: '+self.code+'\nDescription\t: '+self.description+'\nDetails\t: '+self.details
+        
+        
 class GlobusOnline:
 
     endpointCache = {}
-    sleepTime = 60
+    sleepTime = 4
+    lastDetails = {}
     
     def __init__(self, username):
         self.username = username
@@ -184,8 +225,6 @@ class GlobusOnline:
             for option in options:
                 optionsString = optionsString +option+' '
                 
-        print optionsString
-                
         result = self.execute('transfer '+optionsString, transferLines)
         
         id = result.split()[2]
@@ -220,14 +259,13 @@ class GlobusOnline:
     
         return result[0]
     
-    def join(self, id):
+    def wait(self, id):
         
         if isinstance(id, Task):
             id = id.taskId
+        
+        self.execute("wait -q "+id)
             
-        while not self.details(id).isfinished():
-            print("Waiting for task to finish: "+id)
-            time.sleep(self.sleepTime)
         
     def details(self, id):
         
