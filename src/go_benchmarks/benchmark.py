@@ -5,6 +5,13 @@ Created on 11/03/2011
 
 @author: markus
 '''
+
+import os.path
+import sys
+
+directory = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+sys.path.append(directory)
+
 from datetime import datetime
 from go_wrapper.go_commands import GlobusOnline, Transfer, EndpointError, \
     ExecutionError, TaskError
@@ -12,10 +19,11 @@ from pygooglechart import Axis
 from timeit import itertools
 import csv
 import getopt
-import os.path
 import pickle
 import string
-import sys
+
+
+
 try:
     from pygooglechart import ScatterChart
 except:
@@ -449,6 +457,6 @@ def main(argv):
 
 
 if __name__ == "__main__":
-
+    
     main(sys.argv[1:])
 
