@@ -61,7 +61,7 @@ class TaskError(Error):
         
 class Transfer:
     
-    def __init__(self, source_ep, source_path, target_ep, target_path, *options):
+    def __init__(self, source_ep, source_path, target_ep, target_path, options=[]):
         self.source_ep = source_ep
         self.source_path = source_path
         self.target_ep = target_ep
@@ -119,7 +119,7 @@ class Task:
         
         print self.taskId
         print '--------------------------------------------'
-        print '\perf. options: '+self.command
+        print '\tperf. options: '+self.command
         print '\tbytes transferred: '+str(self.bytesTransferred)
         print '\tmbps: '+str(self.mbps)
         print '--------------------------------------------\n'
@@ -153,7 +153,7 @@ class Event:
 class GlobusOnline:
 
     endpointCache = {}
-    sleepTime = 4
+    sleepTime = 60
     lastDetails = {}
     
     def __init__(self, username):
@@ -211,9 +211,15 @@ class GlobusOnline:
         
         transferLines = None
         
+        if transfer.options:
+            print transfer.options
+            opts = ' '.join(transfer.options)
+        else:
+            opts = ''
+            
         for transfer in transferlist:
             
-            transferLine = transfer.source_ep+transfer.source_path + ' ' + transfer.target_ep+transfer.target_path + ' ' + " ".join(transfer.options)
+            transferLine = transfer.source_ep+transfer.source_path + ' ' + transfer.target_ep+transfer.target_path + ' ' + opts
             if not transferLines:
                 transferLines = transferLine
             else:
@@ -259,12 +265,17 @@ class GlobusOnline:
     
         return result[0]
     
-    def wait(self, id):
+    def wait(self, id, sleep=sleepTime):
         
         if isinstance(id, Task):
             id = id.taskId
+            
+        while not self.details(id).isfinished():
+            print("Waiting for task to finish: "+id+', sleeping for '+str(sleep)+' seconds...')
+            time.sleep(sleep)
         
-        self.execute("wait -q "+id)
+       
+        #self.execute("wait -q "+id)
             
         
     def details(self, id):
