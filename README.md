@@ -25,6 +25,8 @@ Running the benchmark script
 
 In order to run benchmarks you need to manually activate the two endpoints you are going to use. Also, you need to copy appropriate source files in place. Also, you need to have a working (ssh-key based) login to globusonline.org.
 
+This script is not finished yet, so there are a few things missing like file-cleanup afterwards (although I'm not sure whether that is possible with globusonline anyway), endpoint activation and such...
+
 ### Usage ###
 
 Here's how you run the script:
@@ -146,3 +148,8 @@ Which will result in something like:
     Chart URL for series 2011-03-15 15:22:44.410233: 
     http://chart.apis.google.com/chart?chxr=0,0,32|1,0,16&chxs=1,676767,10.5,0,l,676767&chxt=x,y,x,y&chs=600x300&cht=s&chds=0,32,0,16,0,34.953&chd=t:0,1,8,16,24,32,1,8,16,24,32,1,8,16,24,32,1,8,16,24,32,1,8,16,24,32,0,1,8,16,0,1,8,16,24,32,1,8,16,24,32,1,8,16,24|0,1,1,1,1,1,4,4,4,4,4,8,8,8,8,8,12,12,12,12,12,16,16,16,16,16,0,1,1,1,0,1,1,1,1,1,4,4,4,4,4,8,8,8,8|17.12,6.991,9.869,10.107,8.066,7.626,19.508,21.509,16.777,20.972,23.967,28.926,27.962,31.069,18.236,25.42,23.967,25.42,24.672,32.264,26.214,19.973,28.926,27.962,28.926,34.953,17.12,6.991,9.869,10.107,17.12,6.991,9.869,10.107,8.066,7.626,19.508,21.509,16.777,20.972,23.967,28.926,27.962,31.069,18.236&chdl=Speed+in+mbps&chma=|5&chtt=Transfer+speed&chxl=0:|4|8|12|16|20|24|28|32|1:|4|8|12|16|20|24|28|32|2:|perf-pp|3:|perf-p&chxp=0,4,8,12,16,20,24,28,32|1,4,8,12,16,20,24,28,32|2,100|3,100
 
+### Exporting a benchmark to a csv file ###
+
+    benchmark.py -n medium  -u markus --csv-file=/home/markus/benchmark.csv
+    
+   
