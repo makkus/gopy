@@ -97,7 +97,7 @@ def create_google_scatter_chart_link_old(x_values, y_values, z_values, x_label =
     data_scale =  'chds=0,'+str(x_max)+',0,'+str(y_max)+',0,'+str(z_max)
     data = 'chd=t:'+x+'|'+y+'|'+z
     
-    axis_labels =  'chxl=0:|4|8|12|16|20|24|28|32|1:|4|8|12|16|20|24|28|32|2:|'+x_label+'|3:|'+y_label
+    axis_labels = 'chxl=0:|4|8|12|16|20|24|28|32|1:|4|8|12|16|20|24|28|32|2:|'+x_label+'|3:|'+y_label
     axis_pos = 'chxp=0,4,8,12,16,20,24,28,32|1,4,8,12,16,20,24,28,32|2,'+str(100)+'|3,'+str(100)
     
     return 'http://chart.apis.google.com/chart?'+ranges+'&chxs=1,676767,10.5,0,l,676767&chxt=x,y,x,y&'+CHART_SIZE+'&cht=s&'+data_scale+'&'+data+'&chdl=Speed+in+mbps&chma=|5&chtt=Transfer+speed&'+axis_labels+'&'+axis_pos
@@ -295,7 +295,7 @@ class Benchmark():
         values_y = []
         values_z = []
         
-        links = []
+        links = {}
         
         for s in self.series:
             
@@ -313,7 +313,7 @@ class Benchmark():
             link = create_google_scatter_chart_link_old(values_x, values_y, values_z, x_axis, y_axis)
             #create_3d_graph(values_x, values_y, values_z, x_axis, y_axis)
             
-            links.append(link)
+            links[s] = link
             
         return links
         
@@ -340,6 +340,7 @@ def usage():
     print '-u\t--username=GLOBUS_ONLINE_USERNAME\tthe globus online username'
     print '-l\t--list\t\t\t\t\tlists all available benchmark names'
     print '-n\t--name=BENCHMARK_NAME\t\t\tthe name of the benchmark'
+    print '-i\t--info\t\t\t\t\tdisplaying information about a benchmark'
     print '-s\t--source-endpoint=SOURCE_ENDPOINT\tthe name of the source endpoint to be used in this series (also requires -p and -t)'
     print '-p\t--source-path\t\t\t\tthe path to the input file/folder to be used in this series (also requires -s and -t)'
     print '-t\t--target-endpoint=SOURCE_ENDPOINT\tthe name of the target endpoint (also requires -p and -s)'
@@ -353,7 +354,7 @@ def usage():
 def main(argv):
     
     try:                                
-        opts, args = getopt.getopt(argv, "hdu:s:t:p:n:c:vl", ["help", "debug", "username=", "source-endpoint=", "target-endpoint=", "source-path=", "name=", "perf-pp=", "perf-cc=", "perf-p=", "csv-file=", "visualize", "list"]) 
+        opts, args = getopt.getopt(argv, "hdu:s:t:p:n:c:vli", ["help", "debug", "username=", "source-endpoint=", "target-endpoint=", "source-path=", "name=", "perf-pp=", "perf-cc=", "perf-p=", "csv-file=", "visualize", "list", "info"]) 
     except getopt.GetoptError:           
         usage()
         sys.exit(2)  
@@ -370,6 +371,7 @@ def main(argv):
     visualize = False
     csv_file = None
     list = False
+    info = False
         
     for opt, arg in opts:                
         if opt in ("-h", "--help"):      
@@ -400,6 +402,8 @@ def main(argv):
             name = arg
         elif opt in ("-l", "--list"):
             list = 1
+        elif opt in ("-i", "--info"):
+            info = 1
             
     if list:
         for bm in os.listdir(BENCHMARKS_DIRECTORY):
@@ -432,16 +436,16 @@ def main(argv):
             se = TransferSeries(source_ep, source_path, target_ep)
             bm.add_series(se)
 
-        else:
+        if info:
             print bm.info()
         
                
         if visualize:
-            for u in bm.visualize(go):
-                print "Chart URL: "+u
+            for s,u in bm.visualize().items():
+                print 'Chart URL for series '+str(s.date_created)+': \n'+u+'\n'
 
         if csv_file:
-            bm.create_csv(csv_file, go)
+            bm.create_csv(csv_file)
         
         
         
