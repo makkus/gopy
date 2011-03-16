@@ -36,7 +36,7 @@ try:
 except:
     pass
 
-BENCHMARKS_DIRECTORY = os.environ['HOME']+os.sep+'go-benchmarks'
+BENCHMARKS_DIRECTORY = os.environ['HOME']+os.sep+'.go-benchmarks'
 TEST_TRANSFER_DIRECTORY = 'testtransfers'
 
 CHART_SIZE = "chs=600x300"
@@ -104,7 +104,6 @@ def create_google_scatter_chart_link_old(x_values, y_values, z_values, x_label =
 
 class BenchmarkItem():
     
-    task = None
     
     def __init__(self, perf_p, perf_cc, perf_pp):
 
@@ -112,6 +111,7 @@ class BenchmarkItem():
         self.perf_cc = perf_cc
         self.perf_pp = perf_pp
         self.handles = {}
+        self.tasks = {}
         
     def get_options(self):
 
@@ -124,7 +124,7 @@ class BenchmarkItem():
 
         self.handles[series] = go.transfer(series.transfer, self.get_options())
         
-        go.wait(self.handles[series], 300)
+        go.wait(self.handles[series], 60)
 
         return self.handles[series]
 
@@ -134,11 +134,13 @@ class BenchmarkItem():
     
     def get_task(self, benchmark, series):
         
-        if not self.task:
-            self.task = benchmark.go.details(self.handles[series])
+        try:
+            return self.tasks[series]
+        except KeyError:
+            self.tasks[series] = benchmark.go.details(self.handles[series])
             benchmark.save()
             
-        return self.task
+        return self.tasks[series]
     
     def get_perf_option(self, option_name):
         
@@ -163,6 +165,8 @@ class TransferSeries():
 
         self.date_created = datetime.now()
         target = '/~/'+TEST_TRANSFER_DIRECTORY+'/'+string.replace(string.replace(str(self.date_created), ':', '_'), ' ','_')+'/target'
+        if source_path.endswith('/'):
+            target = target + '/'
         self.transfer = Transfer(source_ep, source_path, target_ep, target, options)
         
         self.items = []

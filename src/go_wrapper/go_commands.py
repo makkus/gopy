@@ -62,6 +62,14 @@ class TaskError(Error):
 class Transfer:
     
     def __init__(self, source_ep, source_path, target_ep, target_path, options=[]):
+        
+        if (source_path.endswith('/') and not target_path.endswith('/')) or (not source_path.endswith('/') and target_path.endswith('/')):
+            raise Exception('In order to transfer a directory, both source and target urls need to end with "/"')
+        
+        if source_path.endswith('/'):
+            if not '-r' in options:
+                options.append('-r')
+                
         self.source_ep = source_ep
         self.source_path = source_path
         self.target_ep = target_ep
