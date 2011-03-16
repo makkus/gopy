@@ -380,7 +380,10 @@ def main(argv):
     list = False
     info = False
         
-    for opt, arg in opts:                
+    for opt, arg in opts:
+        
+        print 'opt: '+opt+' arg: '+arg
+                        
         if opt in ("-h", "--help"):      
             usage()                     
             sys.exit()                  
@@ -395,11 +398,11 @@ def main(argv):
             target_ep = arg
         elif opt in ("-p", "--source-path"):
             source_path = arg
-        elif opt in ("--perf-pp"):
+        elif opt == "--perf-pp":
             perf_pp = arg.split(',')
-        elif opt in ("--perf-cc"):
+        elif opt  == "--perf-cc":
             perf_cc = arg.split(',')
-        elif opt in ("--perf-p"):
+        elif opt  == "--perf-p":
             perf_p = arg.split(',')
         elif opt in ("-c", "--csv-file"):
             csv_file = arg
