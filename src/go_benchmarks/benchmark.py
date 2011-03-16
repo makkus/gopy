@@ -382,8 +382,6 @@ def main(argv):
         
     for opt, arg in opts:
         
-        print 'opt: '+opt+' arg: '+arg
-                        
         if opt in ("-h", "--help"):      
             usage()                     
             sys.exit()                  
