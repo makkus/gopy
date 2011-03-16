@@ -14692,3 +14692,525 @@ DEBUG:root:Result (stderr):
 DEBUG:root:Creating tranfer...
 DEBUG:root:Populating endpoint cache
 DEBUG:root:Executing: ssh markus@cli.globusonline.org endpoint-list
+DEBUG:root:Creating tranfer...
+DEBUG:root:Populating endpoint cache
+DEBUG:root:Executing: ssh markus@cli.globusonline.org endpoint-list
+DEBUG:root:Result (stdout):
+-------------------
+ci#pads             09:16:52
+go#ep1              -       
+go#ep2              -       
+graham#arcs-df      -       
+auckland            -       
+df                  -       
+df_auckland         -       
+ng2_auckland        -       
+ng5                 09:17:25
+stuartcharters#nzdf -       
+
+
+DEBUG:root:Result (stderr):
+-------------------
+
+
+DEBUG:root:Executing: ssh markus@cli.globusonline.org transfer  
+DEBUG:root:Result (stdout):
+-------------------
+Task ID: 9a12d2a6-4f67-11e0-a364-123139054450
+Created transfer task with 1 file(s)
+
+
+DEBUG:root:Result (stderr):
+-------------------
+
+
+DEBUG:root:Created transfer with id: 9a12d2a6-4f67-11e0-a364-123139054450
+DEBUG:root:Executing: ssh markus@cli.globusonline.org details 9a12d2a6-4f67-11e0-a364-123139054450
+DEBUG:root:Result (stdout):
+-------------------
+Task ID          : 9a12d2a6-4f67-11e0-a364-123139054450
+Task Type        : TRANSFER
+Parent Task ID   : n/a
+Status           : ACTIVE
+Request Time     : 2011-03-16 00:52:00Z
+Deadline         : 2011-03-17 00:52:00Z
+Completion Time  : n/a
+Total Tasks      : 1
+Tasks Successful : 0
+Tasks Expired    : 0
+Tasks Canceled   : 0
+Tasks Failed     : 0
+Tasks Pending    : 1
+Tasks Retrying   : 0
+Command          : transfer (+1 input line)
+Files            : 1
+Files Skipped    : 0
+Directories      : 0
+Bytes Transferred: 0
+Bytes Checksummed: 0
+MBits/sec        : 0.000
+
+
+DEBUG:root:Result (stderr):
+-------------------
+
+
+DEBUG:root:Executing: ssh markus@cli.globusonline.org details 9a12d2a6-4f67-11e0-a364-123139054450
+DEBUG:root:Result (stdout):
+-------------------
+Task ID          : 9a12d2a6-4f67-11e0-a364-123139054450
+Task Type        : TRANSFER
+Parent Task ID   : n/a
+Status           : SUCCEEDED
+Request Time     : 2011-03-16 00:52:00Z
+Deadline         : 2011-03-17 00:52:00Z
+Completion Time  : 2011-03-16 00:52:40Z
+Total Tasks      : 1
+Tasks Successful : 1
+Tasks Expired    : 0
+Tasks Canceled   : 0
+Tasks Failed     : 0
+Tasks Pending    : 0
+Tasks Retrying   : 0
+Command          : transfer (+1 input line)
+Files            : 1
+Files Skipped    : 0
+Directories      : 0
+Bytes Transferred: 104857600
+Bytes Checksummed: 0
+MBits/sec        : 21.509
+
+
+DEBUG:root:Result (stderr):
+-------------------
+
+
+DEBUG:root:Creating tranfer...
+DEBUG:root:Executing: ssh markus@cli.globusonline.org transfer --perf-p=1 --perf-cc=1 --perf-pp=1 
+DEBUG:root:Result (stdout):
+-------------------
+Task ID: c39b086e-4f67-11e0-8662-123139054450
+Created transfer task with 1 file(s)
+
+
+DEBUG:root:Result (stderr):
+-------------------
+
+
+DEBUG:root:Created transfer with id: c39b086e-4f67-11e0-8662-123139054450
+DEBUG:root:Executing: ssh markus@cli.globusonline.org details c39b086e-4f67-11e0-8662-123139054450
+DEBUG:root:Result (stdout):
+-------------------
+Task ID          : c39b086e-4f67-11e0-8662-123139054450
+Task Type        : TRANSFER
+Parent Task ID   : n/a
+Status           : ACTIVE
+Request Time     : 2011-03-16 00:53:10Z
+Deadline         : 2011-03-17 00:53:10Z
+Completion Time  : n/a
+Total Tasks      : 1
+Tasks Successful : 0
+Tasks Expired    : 0
+Tasks Canceled   : 0
+Tasks Failed     : 0
+Tasks Pending    : 1
+Tasks Retrying   : 0
+Command          : transfer --perf-p=1 --perf-cc=1 --perf-pp=1 (+1 input line)
+Files            : 1
+Files Skipped    : 0
+Directories      : 0
+Bytes Transferred: 0
+Bytes Checksummed: 0
+MBits/sec        : 0.000
+
+
+DEBUG:root:Result (stderr):
+-------------------
+
+
+DEBUG:root:Executing: ssh markus@cli.globusonline.org details c39b086e-4f67-11e0-8662-123139054450
+DEBUG:root:Result (stdout):
+-------------------
+Task ID          : c39b086e-4f67-11e0-8662-123139054450
+Task Type        : TRANSFER
+Parent Task ID   : n/a
+Status           : ACTIVE
+Request Time     : 2011-03-16 00:53:10Z
+Deadline         : 2011-03-17 00:53:10Z
+Completion Time  : n/a
+Total Tasks      : 1
+Tasks Successful : 0
+Tasks Expired    : 0
+Tasks Canceled   : 0
+Tasks Failed     : 0
+Tasks Pending    : 1
+Tasks Retrying   : 0
+Command          : transfer --perf-p=1 --perf-cc=1 --perf-pp=1 (+1 input line)
+Files            : 1
+Files Skipped    : 0
+Directories      : 0
+Bytes Transferred: 73400320
+Bytes Checksummed: 0
+MBits/sec        : 8.897
+
+
+DEBUG:root:Result (stderr):
+-------------------
+
+
+DEBUG:root:Executing: ssh markus@cli.globusonline.org details c39b086e-4f67-11e0-8662-123139054450
+DEBUG:root:Result (stdout):
+-------------------
+Task ID          : c39b086e-4f67-11e0-8662-123139054450
+Task Type        : TRANSFER
+Parent Task ID   : n/a
+Status           : SUCCEEDED
+Request Time     : 2011-03-16 00:53:10Z
+Deadline         : 2011-03-17 00:53:10Z
+Completion Time  : 2011-03-16 00:54:26Z
+Total Tasks      : 1
+Tasks Successful : 1
+Tasks Expired    : 0
+Tasks Canceled   : 0
+Tasks Failed     : 0
+Tasks Pending    : 0
+Tasks Retrying   : 0
+Command          : transfer --perf-p=1 --perf-cc=1 --perf-pp=1 (+1 input line)
+Files            : 1
+Files Skipped    : 0
+Directories      : 0
+Bytes Transferred: 104857600
+Bytes Checksummed: 0
+MBits/sec        : 11.038
+
+
+DEBUG:root:Result (stderr):
+-------------------
+
+
+DEBUG:root:Creating tranfer...
+DEBUG:root:Executing: ssh markus@cli.globusonline.org transfer --perf-p=1 --perf-cc=1 --perf-pp=16 
+DEBUG:root:Result (stdout):
+-------------------
+Task ID: 12bd1ec8-4f68-11e0-9419-123139054450
+Created transfer task with 1 file(s)
+
+
+DEBUG:root:Result (stderr):
+-------------------
+
+
+DEBUG:root:Created transfer with id: 12bd1ec8-4f68-11e0-9419-123139054450
+DEBUG:root:Executing: ssh markus@cli.globusonline.org details 12bd1ec8-4f68-11e0-9419-123139054450
+DEBUG:root:Result (stdout):
+-------------------
+Task ID          : 12bd1ec8-4f68-11e0-9419-123139054450
+Task Type        : TRANSFER
+Parent Task ID   : n/a
+Status           : ACTIVE
+Request Time     : 2011-03-16 00:55:23Z
+Deadline         : 2011-03-17 00:55:23Z
+Completion Time  : n/a
+Total Tasks      : 1
+Tasks Successful : 0
+Tasks Expired    : 0
+Tasks Canceled   : 0
+Tasks Failed     : 0
+Tasks Pending    : 1
+Tasks Retrying   : 0
+Command          : transfer --perf-p=1 --perf-cc=1 --perf-pp=16 (+1 input line)
+Files            : 1
+Files Skipped    : 0
+Directories      : 0
+Bytes Transferred: 0
+Bytes Checksummed: 0
+MBits/sec        : 0.000
+
+
+DEBUG:root:Result (stderr):
+-------------------
+
+
+DEBUG:root:Executing: ssh markus@cli.globusonline.org details 12bd1ec8-4f68-11e0-9419-123139054450
+DEBUG:root:Result (stdout):
+-------------------
+Task ID          : 12bd1ec8-4f68-11e0-9419-123139054450
+Task Type        : TRANSFER
+Parent Task ID   : n/a
+Status           : ACTIVE
+Request Time     : 2011-03-16 00:55:23Z
+Deadline         : 2011-03-17 00:55:23Z
+Completion Time  : n/a
+Total Tasks      : 1
+Tasks Successful : 0
+Tasks Expired    : 0
+Tasks Canceled   : 0
+Tasks Failed     : 0
+Tasks Pending    : 1
+Tasks Retrying   : 0
+Command          : transfer --perf-p=1 --perf-cc=1 --perf-pp=16 (+1 input line)
+Files            : 1
+Files Skipped    : 0
+Directories      : 0
+Bytes Transferred: 49020928
+Bytes Checksummed: 0
+MBits/sec        : 5.942
+
+
+DEBUG:root:Result (stderr):
+-------------------
+
+
+DEBUG:root:Executing: ssh markus@cli.globusonline.org details 12bd1ec8-4f68-11e0-9419-123139054450
+DEBUG:root:Result (stdout):
+-------------------
+Task ID          : 12bd1ec8-4f68-11e0-9419-123139054450
+Task Type        : TRANSFER
+Parent Task ID   : n/a
+Status           : SUCCEEDED
+Request Time     : 2011-03-16 00:55:23Z
+Deadline         : 2011-03-17 00:55:23Z
+Completion Time  : 2011-03-16 00:56:51Z
+Total Tasks      : 1
+Tasks Successful : 1
+Tasks Expired    : 0
+Tasks Canceled   : 0
+Tasks Failed     : 0
+Tasks Pending    : 0
+Tasks Retrying   : 0
+Command          : transfer --perf-p=1 --perf-cc=1 --perf-pp=16 (+1 input line)
+Files            : 1
+Files Skipped    : 0
+Directories      : 0
+Bytes Transferred: 104857600
+Bytes Checksummed: 0
+MBits/sec        : 9.533
+
+
+DEBUG:root:Result (stderr):
+-------------------
+
+
+DEBUG:root:Creating tranfer...
+DEBUG:root:Executing: ssh markus@cli.globusonline.org transfer --perf-p=1 --perf-cc=1 --perf-pp=3 
+DEBUG:root:Result (stdout):
+-------------------
+Task ID: 61d8947e-4f68-11e0-a66a-123139054450
+Created transfer task with 1 file(s)
+
+
+DEBUG:root:Result (stderr):
+-------------------
+
+
+DEBUG:root:Created transfer with id: 61d8947e-4f68-11e0-a66a-123139054450
+DEBUG:root:Executing: ssh markus@cli.globusonline.org details 61d8947e-4f68-11e0-a66a-123139054450
+DEBUG:root:Result (stdout):
+-------------------
+Task ID          : 61d8947e-4f68-11e0-a66a-123139054450
+Task Type        : TRANSFER
+Parent Task ID   : n/a
+Status           : ACTIVE
+Request Time     : 2011-03-16 00:57:35Z
+Deadline         : 2011-03-17 00:57:35Z
+Completion Time  : n/a
+Total Tasks      : 1
+Tasks Successful : 0
+Tasks Expired    : 0
+Tasks Canceled   : 0
+Tasks Failed     : 0
+Tasks Pending    : 1
+Tasks Retrying   : 0
+Command          : transfer --perf-p=1 --perf-cc=1 --perf-pp=3 (+1 input line)
+Files            : 1
+Files Skipped    : 0
+Directories      : 0
+Bytes Transferred: 0
+Bytes Checksummed: 0
+MBits/sec        : 0.000
+
+
+DEBUG:root:Result (stderr):
+-------------------
+
+
+DEBUG:root:Executing: ssh markus@cli.globusonline.org details 61d8947e-4f68-11e0-a66a-123139054450
+DEBUG:root:Result (stdout):
+-------------------
+Task ID          : 61d8947e-4f68-11e0-a66a-123139054450
+Task Type        : TRANSFER
+Parent Task ID   : n/a
+Status           : ACTIVE
+Request Time     : 2011-03-16 00:57:35Z
+Deadline         : 2011-03-17 00:57:35Z
+Completion Time  : n/a
+Total Tasks      : 1
+Tasks Successful : 0
+Tasks Expired    : 0
+Tasks Canceled   : 0
+Tasks Failed     : 0
+Tasks Pending    : 1
+Tasks Retrying   : 0
+Command          : transfer --perf-p=1 --perf-cc=1 --perf-pp=3 (+1 input line)
+Files            : 1
+Files Skipped    : 0
+Directories      : 0
+Bytes Transferred: 100139008
+Bytes Checksummed: 0
+MBits/sec        : 12.138
+
+
+DEBUG:root:Result (stderr):
+-------------------
+
+
+DEBUG:root:Executing: ssh markus@cli.globusonline.org details 61d8947e-4f68-11e0-a66a-123139054450
+DEBUG:root:Result (stdout):
+-------------------
+Task ID          : 61d8947e-4f68-11e0-a66a-123139054450
+Task Type        : TRANSFER
+Parent Task ID   : n/a
+Status           : SUCCEEDED
+Request Time     : 2011-03-16 00:57:35Z
+Deadline         : 2011-03-17 00:57:35Z
+Completion Time  : 2011-03-16 00:58:43Z
+Total Tasks      : 1
+Tasks Successful : 1
+Tasks Expired    : 0
+Tasks Canceled   : 0
+Tasks Failed     : 0
+Tasks Pending    : 0
+Tasks Retrying   : 0
+Command          : transfer --perf-p=1 --perf-cc=1 --perf-pp=3 (+1 input line)
+Files            : 1
+Files Skipped    : 0
+Directories      : 0
+Bytes Transferred: 104857600
+Bytes Checksummed: 0
+MBits/sec        : 12.520
+
+
+DEBUG:root:Result (stderr):
+-------------------
+
+
+DEBUG:root:Executing: ssh markus@cli.globusonline.org details 9a12d2a6-4f67-11e0-a364-123139054450
+DEBUG:root:Result (stdout):
+-------------------
+Task ID          : 9a12d2a6-4f67-11e0-a364-123139054450
+Task Type        : TRANSFER
+Parent Task ID   : n/a
+Status           : SUCCEEDED
+Request Time     : 2011-03-16 00:52:00Z
+Deadline         : 2011-03-17 00:52:00Z
+Completion Time  : 2011-03-16 00:52:40Z
+Total Tasks      : 1
+Tasks Successful : 1
+Tasks Expired    : 0
+Tasks Canceled   : 0
+Tasks Failed     : 0
+Tasks Pending    : 0
+Tasks Retrying   : 0
+Command          : transfer (+1 input line)
+Files            : 1
+Files Skipped    : 0
+Directories      : 0
+Bytes Transferred: 104857600
+Bytes Checksummed: 0
+MBits/sec        : 21.509
+
+
+DEBUG:root:Result (stderr):
+-------------------
+
+
+DEBUG:root:Executing: ssh markus@cli.globusonline.org details c39b086e-4f67-11e0-8662-123139054450
+DEBUG:root:Result (stdout):
+-------------------
+Task ID          : c39b086e-4f67-11e0-8662-123139054450
+Task Type        : TRANSFER
+Parent Task ID   : n/a
+Status           : SUCCEEDED
+Request Time     : 2011-03-16 00:53:10Z
+Deadline         : 2011-03-17 00:53:10Z
+Completion Time  : 2011-03-16 00:54:26Z
+Total Tasks      : 1
+Tasks Successful : 1
+Tasks Expired    : 0
+Tasks Canceled   : 0
+Tasks Failed     : 0
+Tasks Pending    : 0
+Tasks Retrying   : 0
+Command          : transfer --perf-p=1 --perf-cc=1 --perf-pp=1 (+1 input line)
+Files            : 1
+Files Skipped    : 0
+Directories      : 0
+Bytes Transferred: 104857600
+Bytes Checksummed: 0
+MBits/sec        : 11.038
+
+
+DEBUG:root:Result (stderr):
+-------------------
+
+
+DEBUG:root:Executing: ssh markus@cli.globusonline.org details 12bd1ec8-4f68-11e0-9419-123139054450
+DEBUG:root:Result (stdout):
+-------------------
+Task ID          : 12bd1ec8-4f68-11e0-9419-123139054450
+Task Type        : TRANSFER
+Parent Task ID   : n/a
+Status           : SUCCEEDED
+Request Time     : 2011-03-16 00:55:23Z
+Deadline         : 2011-03-17 00:55:23Z
+Completion Time  : 2011-03-16 00:56:51Z
+Total Tasks      : 1
+Tasks Successful : 1
+Tasks Expired    : 0
+Tasks Canceled   : 0
+Tasks Failed     : 0
+Tasks Pending    : 0
+Tasks Retrying   : 0
+Command          : transfer --perf-p=1 --perf-cc=1 --perf-pp=16 (+1 input line)
+Files            : 1
+Files Skipped    : 0
+Directories      : 0
+Bytes Transferred: 104857600
+Bytes Checksummed: 0
+MBits/sec        : 9.533
+
+
+DEBUG:root:Result (stderr):
+-------------------
+
+
+DEBUG:root:Executing: ssh markus@cli.globusonline.org details 61d8947e-4f68-11e0-a66a-123139054450
+DEBUG:root:Result (stdout):
+-------------------
+Task ID          : 61d8947e-4f68-11e0-a66a-123139054450
+Task Type        : TRANSFER
+Parent Task ID   : n/a
+Status           : SUCCEEDED
+Request Time     : 2011-03-16 00:57:35Z
+Deadline         : 2011-03-17 00:57:35Z
+Completion Time  : 2011-03-16 00:58:43Z
+Total Tasks      : 1
+Tasks Successful : 1
+Tasks Expired    : 0
+Tasks Canceled   : 0
+Tasks Failed     : 0
+Tasks Pending    : 0
+Tasks Retrying   : 0
+Command          : transfer --perf-p=1 --perf-cc=1 --perf-pp=3 (+1 input line)
+Files            : 1
+Files Skipped    : 0
+Directories      : 0
+Bytes Transferred: 104857600
+Bytes Checksummed: 0
+MBits/sec        : 12.520
+
+
+DEBUG:root:Result (stderr):
+-------------------
+
+

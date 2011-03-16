@@ -15,7 +15,6 @@ sys.path.append(directory)
 from datetime import datetime
 from go_wrapper.go_commands import GlobusOnline, Transfer, EndpointError, \
     ExecutionError, TaskError
-from pygooglechart import Axis
 from timeit import itertools
 import csv
 import getopt
