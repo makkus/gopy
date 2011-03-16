@@ -37,6 +37,10 @@ except:
     pass
 
 BENCHMARKS_DIRECTORY = os.environ['HOME']+os.sep+'.go-benchmarks'
+
+if not os.path.exists(BENCHMARKS_DIRECTORY):
+    os.mkdir(BENCHMARKS_DIRECTORY)
+
 TEST_TRANSFER_DIRECTORY = 'testtransfers'
 
 CHART_SIZE = "chs=600x300"
